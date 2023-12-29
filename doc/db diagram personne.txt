@@ -1,0 +1,20 @@
+
+Table personne{
+   id int [pk,increment]
+   nom vachar(255) [not null]
+   prenom vachar(255) [not null]
+   categ_id int
+}
+
+
+Table categ{
+  id int [pk,increment]
+  nom vachar(255) [not null]
+}
+
+
+
+
+
+
+Ref: "categ"."id" < "personne"."categ_id"

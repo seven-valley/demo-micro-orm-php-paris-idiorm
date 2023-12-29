@@ -1,6 +1,6 @@
 # Prise en main du micro ORM Paris & Idiorm
 
-### configuration
+### Configuration
 ```php
 require_once './inc/config.inc.php';
 require_once './inc/class/personne.class.php';

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "nom": "PITT",
+    "prenom": "Brad",
+    "categ": { "id": "2", "nom": "Client" },
+    "competences": [
+      { "id": "1", "nom": "Dev" },
+      { "id": "2", "nom": "Admin Sys" }
+    ]
+  },
+  {
+    "id": "2",
+    "nom": "CAGE",
+    "prenom": "Nicolas",
+    "categ": { "id": "1", "nom": "VIP" },
+    "competences": [{ "id": "1", "nom": "Dev" }]
+  },
+  {
+    "id": "3",
+    "nom": "JOLIE",
+    "prenom": "Angelina",
+    "categ": { "id": "1", "nom": "VIP" },
+    "competences": []
+  },
+  {
+    "id": "4",
+    "nom": "CRUISE",
+    "prenom": "Tom",
+    "categ": { "id": "1", "nom": "VIP" },
+    "competences": []
+  },
+  {
+    "id": "6",
+    "nom": "DOE",
+    "prenom": "John",
+    "categ": { "id": "1", "nom": "VIP" },
+    "competences": []
+  }
+]

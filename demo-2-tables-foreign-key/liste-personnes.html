@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des Personnes</title>
+  </head>
+  <body>
+    <div class="container" > 
+      <h1>Liste de Personnes</h1>
+      <!-- 
+        
+       <h2>Prénom Nom</h1>
+       <h3>VIP</h3>
+        
+        <ul>
+          <li>Dev</li>
+          <li>Admin</li>
+        </ul>
+     
+    --></div>
+    <script>
+      // voir axios -- fetch ok pour la lecture
+      async function Afficher() {
+        const response = await fetch("personnes.json");
+        const personnes = await response.json(); // tableau de personnes
+        //console.log(personnes);
+        let container = document.querySelector('.container');
+        // créer une balise
+        for (let p of personnes){     
+          let h2 = document.createElement('h2');
+          h2.innerHTML= p.prenom + ' '+ p.nom;
+          container.appendChild(h2);
+          let h3 = document.createElement('h3');
+          h3.innerHTML= p.categ.nom;
+          container.appendChild(h3);
+          let ul = document.createElement('ul');
+          for (let c of p.competences){
+            let li = document.createElement('li');
+            li.innerHTML = c.nom;
+            ul.appendChild(li);
+          }
+          container.appendChild(ul);
+        }
+      }
+      Afficher();
+    </script>
+  </body>
+</html>
