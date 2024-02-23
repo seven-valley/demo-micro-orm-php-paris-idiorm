@@ -1,7 +1,9 @@
 # Prise en main du micro ORM Paris & Idiorm
 
-# data base
+## data base
+![Table personne](https://github.com/seven-valley/demo-micro-orm-php-paris-idiorm/blob/main/img/table-personne.png)
 
+### pseudo script  pour db diagram :
 ```
 Table personne{
   id int [pk]
