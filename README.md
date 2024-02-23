@@ -4,6 +4,7 @@
 ![Table personne](https://github.com/seven-valley/demo-micro-orm-php-paris-idiorm/blob/main/img/table-personne.png)
 
 ### pseudo script  pour db diagram :
+[db diagram](https://dbdiagram.io/)
 ```
 Table personne{
   id int [pk]
