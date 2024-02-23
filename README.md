@@ -2,6 +2,16 @@
 
 ### Configuration
 ```php
+// le fichier config.inc.php
+//la base de données
+require_once 'idiorm.inc.php';
+require_once 'paris.inc.php';
+ORM::configure('mysql:host=localhost;dbname=rmbz0603_passeports');
+ORM::configure('username', 'root');
+ORM::configure('password', '');
+```
+
+```php
 require_once './inc/config.inc.php';
 require_once './inc/class/personne.class.php';
 ```
@@ -14,3 +24,10 @@ class Personne  extends Model{
 	public static $_table = "personne"; // la table personne Mysql
 }
 ```
+
+### les imports :
+```php
+require_once './inc/config.inc.php';
+require_once './inc/class/personne.class.php';
+```
+
