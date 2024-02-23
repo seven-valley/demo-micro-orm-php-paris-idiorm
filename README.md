@@ -1,5 +1,14 @@
 # Prise en main du micro ORM Paris & Idiorm
 
+# data base
+
+```
+Table personne{
+  id int [pk]
+  prenom varchar(50)
+  nom varchar(50)
+}
+```
 ### Configuration
 ```php
 // le fichier config.inc.php
